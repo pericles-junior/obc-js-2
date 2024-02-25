@@ -40,6 +40,9 @@ while (menu !== "3") {
 
       if (confirmacao) {
         imoveis.push(imovel);
+        alert("Imóvel salvo com sucesso!");
+      } else {
+        alert("Voltando ao menu.");
       }
       break;
     case "2":
