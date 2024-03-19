@@ -10,6 +10,33 @@ function somar(x, y){
     return x + y
 }
 
-calcular(3, 5, somar)
+console.log(calcular(3, 5, somar))
 
-calcular(8, 4, )
+console.log(calcular(8, 4, function(x, y){
+    console.log("Realizando uma subtraçao.")
+    return x - y
+}))
+
+function exibirElemento(elemento, indice, array){
+    console.log({
+        elemento,
+        indice,
+        array
+    })
+}
+
+const lista = ["Maçã", "Banana","Pera","Tomate", "Limão"]
+
+for (i = 0; i < lista.length; i++){
+    exibirElemento(lista[i], i, lista)
+}
+
+lista.forEach(exibirElemento)
+
+lista.forEach(function(elemento, indice, array){
+    console.log({
+    elemento,
+    indice,
+    array
+})
+})
